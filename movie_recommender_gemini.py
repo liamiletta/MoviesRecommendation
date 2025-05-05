@@ -16,9 +16,8 @@ st.set_page_config(
 )
 
 # Encode uploaded banner image
-with open(r"C:\Users\Алия Мухтарова\Downloads\wallpaperflare.com_wallpaper.jpg", "rb") as img_file:
+with open("wallpaperflare.com_wallpaper.jpg", "rb") as img_file:
     encoded_banner = base64.b64encode(img_file.read()).decode()
-
 
 st.markdown(
     f"""
