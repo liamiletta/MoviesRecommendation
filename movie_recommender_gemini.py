@@ -3,6 +3,8 @@ import requests
 import re
 import json
 import base64
+from dotenv import load_dotenv
+import os
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 API_KEY = os.getenv("API_KEY")
