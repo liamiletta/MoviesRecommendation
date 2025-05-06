@@ -4,7 +4,7 @@ import re
 import json
 import base64
 # Gemini API key
-GEMINI_API_KEY = "AIzaSyCOB-OSNN-v7GNdw4Katn4-aYUj5sxU1NI"  # Replace with your actual Gemini API key
+GEMINI_API_KEY = st.secrets["AIzaSyCOB-OSNN-v7GNdw4Katn4-aYUj5sxU1NI"]  # Replace with your actual Gemini API key
 
 API_KEY = "d51dce684e6fd529bfbef5c8e83078b4"  # TMDB API key
 
