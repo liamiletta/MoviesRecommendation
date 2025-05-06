@@ -3,6 +3,7 @@ import requests
 import re
 import json
 import base64
+st.write(st.secrets)
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"] 
 API_KEY = st.secrets["API_KEY"]
 st.set_page_config(
