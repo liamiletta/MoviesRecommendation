@@ -3,9 +3,9 @@ import requests
 import re
 import json
 import base64
-st.write(st.secrets)
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"] 
-API_KEY = st.secrets["API_KEY"]
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = os.getenv("API_KEY")
 st.set_page_config(
     page_title="Intelligent Movie Recommender \U0001F3AC",
     page_icon="\U0001F3AC",
