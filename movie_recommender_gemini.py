@@ -105,6 +105,16 @@ st.markdown(
     .stDeployButton {{
         filter: brightness(180%) contrast(130%);
     }}
+    
+    /* Убираем боковые акценты на мобильных устройствах */
+    @media only screen and (max-width: 768px) {{
+        .side-accent-left,
+        .side-accent-right {{
+            display: none; /* Скрыть боковые акценты на мобильных устройствах */
+        }}
+    }}
+    
+    /* Настройка боковых акцентов для более широких экранов */
     .side-accent-left, .side-accent-right {{
         position: fixed;
         top: 0;
@@ -115,9 +125,11 @@ st.markdown(
     }}
     .side-accent-left {{ left: 0; }}
     .side-accent-right {{ right: 0; }}
+    
     header[data-testid="stHeader"] {{
         background-color: #800000 !important;
     }}
+    
     h1, h2, h3, h4, h5, h6 {{
         color: white !important;
     }}
@@ -128,6 +140,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 st.markdown("""
 <h1 style='font-size: 48px;'>🎬 Intelligent Movie Recommender</h1>
