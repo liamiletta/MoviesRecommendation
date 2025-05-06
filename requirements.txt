@@ -1,4 +1,0 @@
-streamlit
-python-dotenv
-requests
-other-libraries-you-need
